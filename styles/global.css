@@ -25,7 +25,7 @@ body{
   color: var(--text-dark);
   font-size: 16px;
   line-height: 1.5;
-  width: 957px;
+  max-width: 952px;
   height: 877px;
   margin: auto;
   padding: 20px;
@@ -45,12 +45,17 @@ header{
 header .info{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 header .summary{
   width: 50%;
   margin: auto;
 }
 .contact { margin: 30px 40px 0 auto; }
+.contact a:hover{
+  text-decoration: underline;
+  color: #fff;
+}
 .profile-image{
   width: 150px;
   height: 150px;
@@ -66,15 +71,15 @@ header .summary{
 
 header h1{
   margin-bottom: 15px;
-  font-style: 2.5rem;
+  font-style: 2rem;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .section{
   background: white;
-  margin: 30px 0;
-  padding: 30px;
+  margin: 15px 0;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -86,13 +91,13 @@ header h1{
   color: var(--primary-color);
   border-bottom: 3px solid var(--secondary-color);
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .project{
   background: var(--background-light);
-  margin-bottom: 15px;
-  padding: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
@@ -123,12 +128,13 @@ header h1{
 .skill:hover{
   background-color: var(--primary-color);
 }
+#skills, #hobbies{
+ width: 100%;
+}
 
 /* responsive */
 @media screen and (max-width: 400px){
-  body{
-    background-color: red;
-  }
+ 
   .container{
     width: 95%;
   }

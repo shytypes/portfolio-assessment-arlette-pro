@@ -48,13 +48,32 @@ header .info{
   flex-wrap: wrap;
 }
 header .summary{
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
-.contact { margin: 30px 40px 0 auto; }
+/* ----Contacts   -----*/
+.contact { 
+  margin: 30px 20px 0;
+  width: 500px;
+  height: 110px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px;
+}
+.contact p{
+  color: var(--text-dark);
+  display: inline-block;
+
+}
+.contact a{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 .contact a:hover{
   text-decoration: underline;
-  color: #fff;
 }
 .profile-image{
   width: 150px;
@@ -93,6 +112,7 @@ header h1{
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
+/*----- Projects -----*/
 
 .project{
   background: var(--background-light);
@@ -105,11 +125,14 @@ header h1{
 .project:hover{
   background: #e9ecef
 }
+/*-----   hobbies -----*/
 .hobbies{
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
+
+/* -----  Skills  ------ */
 .skills{
   display: flex;
   flex-wrap: wrap;
